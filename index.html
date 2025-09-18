@@ -4,15 +4,16 @@
 <meta charset="UTF-8">
 <title>確認テスト</title>
 <style>
-  body { font-family: sans-serif; text-align: left; }
-  .card { border:1px solid #ccc; padding:1em; margin:1em 0; border-radius:8px; }
+  body { font-family: sans-serif; text-align: left; background:#f7f7f7; padding:2em; }
+  .card { border:1px solid #ccc; padding:1em; margin:1em 0; border-radius:8px; background:#fff; max-width:700px; }
   .card h2 { font-size: 16px; margin: 0 0 .5em; }
   .options { display: grid; gap: .4em; margin-top: .5em; }
   .options button {
-    font-size: 16px; text-align: left; padding: .5em; background: #eef6ff;
+    font-size: 16px; text-align: left; padding: .5em; background: #eef6ff; border:1px solid #ccc; border-radius:5px; cursor:pointer;
   }
-  .correct { background:#d9ffd9; }
-  .incorrect { background:#ffd9d9; }
+  .options button:hover { background:#ddeeff; }
+  .correct { background:#d9ffd9 !important; }
+  .incorrect { background:#ffd9d9 !important; }
   .explanation { margin-top: .5em; border-top:1px solid #ccc; padding-top:.5em; display:none; }
   .reset-btn { margin-top:.5em; }
 </style>
@@ -1174,5 +1175,6 @@ render();
 </script>
 </body>
 </html>
+
 
 
