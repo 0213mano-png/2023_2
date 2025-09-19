@@ -4,18 +4,34 @@
 <meta charset="UTF-8">
 <title>確認テスト</title>
 <style>
-  body { font-family: sans-serif; text-align: left; }
-  .card { border:1px solid #ccc; padding:1em; margin:1em 0; border-radius:8px; }
-  .card h2 { font-size: 16px; margin: 0 0 .5em; }
-  .options { display: grid; gap: .4em; margin-top: .5em; }
-  .options button {
-    font-size: 16px; text-align: left; padding: .5em;
+  body {
+    background-color: #fdfdfd;   /* 明るい背景（ほぼ白） */
+    color: #333;                /* 濃いグレーの文字（黒より柔らかい） */
+    font-family: sans-serif;
   }
-  .correct { background:#d9ffd9; }
-  .incorrect { background:#ffd9d9; }
-  .explanation { margin-top: .5em; border-top:1px solid #ccc; padding-top:.5em; display:none; }
-  .reset-btn { margin-top:.5em; }
+
+  .card {
+    background-color: #ffffff;  /* 問題カードも白背景に */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* ふんわり影 */
+  }
+
+  .options button {
+    background-color: #eef6ff;  /* 選択肢の淡いブルー */
+    color: #333;
+    border: 1px solid #cce0ff;
+    border-radius: 6px;
+    padding: .5em;
+  }
+
+  .options button:hover {
+    background-color: #d9ebff; /* ホバー時に少し濃く */
+  }
 </style>
+
 </head>
 <body>
 <h1>確認テスト</h1>
@@ -1174,6 +1190,7 @@ render();
 </script>
 </body>
 </html>
+
 
 
 
